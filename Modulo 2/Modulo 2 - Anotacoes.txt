@@ -1,1 +1,207 @@
-Modulo 2 - Anotacoes
+Modulo 2 - HTML5 E CSS3
+
+CRIADOR - TIM BERNERS-LEE
+
+1. HISTÓRIA E ESTRUTURA BÁSICA
+2. SEMÂNTICA
+3. PRINCIPAIS ELEMENTOS HTML
+
+REQUISITOS
+1. VS CODE
+2. NAVEGADIR
+
+ELEMENTO E A BASE DO HTML
+INICIA-SE COM UMA TAG DE ABERTURA, PODENDO TER UM ATRIBUTO
+
+ESTRUTURA BÁSICA
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta>
+ <title></title>
+ </head>
+ <body>	
+ </body>
+</html>
+
+SEMÂNTICA
+<section>   <aside>
+<header>    <footer>
+<article>   <h1><h6>
+
+TAGS PARA TEXTOS
+<h1>TÍTULO DA PÁGINA</H1>
+<h2>TÍTULO DA SEÇÃO</H2>
+<h3>TÍTULO DE ARTIGO</H3>
+<p>CONTEÚDO DO ARTIGO.<p> - TEXTOS MAIORES, IMAGENS E DIVERSOS CONTEUDOS.
+
+TAGS PARA LINKS
+<a>Link</a> --------Âncora
+<a href="linkedin.com/in/vilaboim">Linkdin</a>
+<a href="mailto:amauri.fsp@gmail.com">E-mail</a>
+<a target="_blank>Link</a> -----Abre o link em uma nova aba
+
+TAGS PARA IMAGENS
+<img>
+<img src="img/avatar.jpg">
+<img alt="Foto de Amauri Pereira">
+
+ELEMENTOS PARA LISTAS
+SERVE PARA AGRUPAR COLEÇÃO DE ITENS
+
+<ul>  - lista de elementos não são importantes
+<ol>  - lista dos elementos são importantes
+<li>  - item da lista
+
+===================================================================================================
+INTRODUÇÃO CSS3
+
+1. O QUE SÃO SELETORES.
+2. CONCEITOS BÁSICOS.
+3. PRINCIPAIS SELETORES CSS
+
+LINGUAGEM DE ESTILO CONHECIDO COMO CSS, CRIAÇÃO DE REGRAS DE ESTILHOS PARA ELEMENTOS E GRUPOS DE ELEMENTOS
+
+CLASSE É PRECIDIDO POR PONTO "."
+ID É PRECEDIDO POR HASH "#"
+
+BOX MODEL
+MARGIN - ESPAÇAMENTOS ENTRE ELEMENTOS
+BORDER - BORDAS CIRCULAM O PADDING E CONTENT
+PADDIND -ESPAÇAMENTOS ENTRE BORDER E CONTENT
+CONTENT - CONTEÚDO, TEXTO, IMAGEM, VIDEO ETC
+
+PADDING
+.post{
+padding-top: 15px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-left: 0;
+}
+
+BACKGROUND
+.post{
+background-color: green;
+background-image: url("arduino.png");
+background-position: top;
+}
+
+.post {
+background-color: green;
+background-color: #008800;
+background: #008000;
+}
+
+BORDER
+LARGURA: PIXELS, CENTÍMETROS, MILÉMETROS...
+COR: BLUE, #0000FF...
+ESTILO: SÓLIDA, PONTILHADA, TRACEJADA...
+
+.post {
+border: 3px solid blue;
+border-top: 2px dotted green;
+border-right: 4px dashed pink;
+}
+
+.post {
+border-top: 2px dotted green;
+border-right: 4px dashed pink;
+border-bottom: 1px solid purple;
+border-left: 4px dotted cyan;
+}
+
+
+.post {
+border: 3px solid #gray;
+}
+
+.post {
+border-width: 3px;
+border-color: gray;
+border-style: solid;
+}
+
+.post {
+border-top-width: 3px;
+border-top-color: blue;
+border-top-style: solid;
+}
+
+RAIO
+border-radiu: 10px;
+border-radius: 50%
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%
+
+FONT-FAMILY
+#title {
+fonte-family: Verdana;
+}
+
+.post-title {
+font-family: Verdana, Arial;
+}
+
+FONT-SIZE
+#title {
+fonte-size: 30px;
+}
+
+FONT-STYLE
+#title {
+font-style: normal;
+font-style: italic;
+}
+
+FONT-WEIGHT
+#title {
+font-weight: normal;
+font-weight: bold;
+}
+
+TEXT-TRANSFORM
+#title {
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+}
+
+TEXT-DECORATION
+#title {
+text-decoration: underline;
+text-decoration: overline;
+text-decoration: line-through;
+}
+
+LIST-STYLE-TYPE
+LISTA NÃO ORDENADA
+ul{
+list-style-type: square;
+}
+
+LISTA ORDENADA
+ol {
+list-style-type: upper-roman;
+}
+
+LISTA NÃO ORDENADA
+ul {
+list-style-type: "\1F44D"; => MOSTRA O EMOJI DE UM JOINHA
+
+LIST-STYLE-IMAGE
+ul {
+list-style-image: url("rocket.pnj");
+
+DIMENSÃO E ALINHAMENTO
+width
+height
+
+Max-width
+Mx-height
+
+Margin
+Text align
+
+
+
+
