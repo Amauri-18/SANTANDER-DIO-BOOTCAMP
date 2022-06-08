@@ -2,7 +2,7 @@
 
 Repositório Criado Referente ao Bootcamp Santander Fullstack Developer - DIO
 
-- MÓDULO 0 - Prepara-se para a jornada
+- Módulo 0 - Prepara-se para a jornada
 - Módulo 1 - Conteúdo de Abertura
 - Módulo 2 - HTML/CSS3/JS
 - Módulo 3 - Angular
