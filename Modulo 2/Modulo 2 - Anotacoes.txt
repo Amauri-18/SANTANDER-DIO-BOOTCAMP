@@ -284,6 +284,38 @@ CENTER: RELATIVO AO CENTRO DE ACORDO COM O EIXO.
 STRETCH: OCUPA TODO OS ESPAÇOS RELATIVOS
 BASELINE: UTILIZA A LINHA BASE DA TIPOGRAFIA.
 
+=====================================================================================================================================================
+
+JAVASCRIPT
+
+HISTORIA.
+*LINGUAGEM INTERPRETADA
+*BASEADA EM PROTÓTIPOS
+*MULTPARADIGMA
+*COMUMENTE UTILIZADA EM APLICACOES WEB CLIENTE-SIDE.
+*SEGUE O PADRAO ECMAscript.
+
+1997 - FIRST EDITION.
+1998 - ECMAscript 2 (Editorial changes only)
+1999 - ECMAscrpt 3 (Regular Expressions, try/catch).
+2009 - ECMAscript 5 (strict mode, JSON support, String.trim(), Array.isArray(), Array Iteration Methods.
+2015 - ECMAscript 6
+
+Aplicações
+*WEB
+*MOBILE
+*SMARTWATCHES
+*GAME
+*INTERNET OF THINGS
+*APIS
+
+NODE.JS => VERIFICAR CURSO NA DIO.
+VSCODE  => VERIFICAR CURSO NA DIO.
+
+RECURSOS BASICOS
+
+DOM - DOCUMENT OBJECT MODEL - ESTRUTURA DOS ELEMENTOS DENTRO DA JANELA
+
 
 
 
