@@ -1,0 +1,758 @@
+Modulo 2 - HTML5 E CSS3
+
+CRIADOR - TIM BERNERS-LEE
+
+1. HISTÓRIA E ESTRUTURA BÁSICA
+2. SEMÂNTICA
+3. PRINCIPAIS ELEMENTOS HTML
+
+REQUISITOS
+1. VS CODE
+2. NAVEGADIR
+
+ELEMENTO E A BASE DO HTML
+INICIA-SE COM UMA TAG DE ABERTURA, PODENDO TER UM ATRIBUTO
+
+ESTRUTURA BÁSICA
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta>
+ <title></title>
+ </head>
+ <body>	
+ </body>
+</html>
+
+SEMÂNTICA
+<section>   <aside>
+<header>    <footer>
+<article>   <h1><h6>
+
+TAGS PARA TEXTOS
+<h1>TÍTULO DA PÁGINA</H1>
+<h2>TÍTULO DA SEÇÃO</H2>
+<h3>TÍTULO DE ARTIGO</H3>
+<p>CONTEÚDO DO ARTIGO.<p> - TEXTOS MAIORES, IMAGENS E DIVERSOS CONTEUDOS.
+
+TAGS PARA LINKS
+<a>Link</a> --------Âncora
+<a href="linkedin.com/in/vilaboim">Linkdin</a>
+<a href="mailto:amauri.fsp@gmail.com">E-mail</a>
+<a target="_blank>Link</a> -----Abre o link em uma nova aba
+
+TAGS PARA IMAGENS
+<img>
+<img src="img/avatar.jpg">
+<img alt="Foto de Amauri Pereira">
+
+ELEMENTOS PARA LISTAS
+SERVE PARA AGRUPAR COLEÇÃO DE ITENS
+
+<ul>  - lista de elementos não são importantes
+<ol>  - lista dos elementos são importantes
+<li>  - item da lista
+
+===================================================================================================
+INTRODUÇÃO CSS3
+
+1. O QUE SÃO SELETORES.
+2. CONCEITOS BÁSICOS.
+3. PRINCIPAIS SELETORES CSS
+
+LINGUAGEM DE ESTILO CONHECIDO COMO CSS, CRIAÇÃO DE REGRAS DE ESTILHOS PARA ELEMENTOS E GRUPOS DE ELEMENTOS
+
+CLASSE É PRECIDIDO POR PONTO "."
+ID É PRECEDIDO POR HASH "#"
+
+BOX MODEL
+MARGIN - ESPAÇAMENTOS ENTRE ELEMENTOS
+BORDER - BORDAS CIRCULAM O PADDING E CONTENT
+PADDIND -ESPAÇAMENTOS ENTRE BORDER E CONTENT
+CONTENT - CONTEÚDO, TEXTO, IMAGEM, VIDEO ETC
+
+PADDING
+.post{
+padding-top: 15px;
+padding-right: 10px;
+padding-bottom: 5px;
+padding-left: 0;
+}
+
+BACKGROUND
+.post{
+background-color: green;
+background-image: url("arduino.png");
+background-position: top;
+}
+
+.post {
+background-color: green;
+background-color: #008800;
+background: #008000;
+}
+
+BORDER
+LARGURA: PIXELS, CENTÍMETROS, MILÉMETROS...
+COR: BLUE, #0000FF...
+ESTILO: SÓLIDA, PONTILHADA, TRACEJADA...
+
+.post {
+border: 3px solid blue;
+border-top: 2px dotted green;
+border-right: 4px dashed pink;
+}
+
+.post {
+border-top: 2px dotted green;
+border-right: 4px dashed pink;
+border-bottom: 1px solid purple;
+border-left: 4px dotted cyan;
+}
+
+
+.post {
+border: 3px solid #gray;
+}
+
+.post {
+border-width: 3px;
+border-color: gray;
+border-style: solid;
+}
+
+.post {
+border-top-width: 3px;
+border-top-color: blue;
+border-top-style: solid;
+}
+
+RAIO
+border-radiu: 10px;
+border-radius: 50%
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%
+
+FONT-FAMILY
+#title {
+fonte-family: Verdana;
+}
+
+.post-title {
+font-family: Verdana, Arial;
+}
+
+FONT-SIZE
+#title {
+fonte-size: 30px;
+}
+
+FONT-STYLE
+#title {
+font-style: normal;
+font-style: italic;
+}
+
+FONT-WEIGHT
+#title {
+font-weight: normal;
+font-weight: bold;
+}
+
+TEXT-TRANSFORM
+#title {
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+}
+
+TEXT-DECORATION
+#title {
+text-decoration: underline;
+text-decoration: overline;
+text-decoration: line-through;
+}
+
+LIST-STYLE-TYPE
+LISTA NÃO ORDENADA
+ul{
+list-style-type: square;
+}
+
+LISTA ORDENADA
+ol {
+list-style-type: upper-roman;
+}
+
+LISTA NÃO ORDENADA
+ul {
+list-style-type: "\1F44D"; => MOSTRA O EMOJI DE UM JOINHA
+
+LIST-STYLE-IMAGE
+ul {
+list-style-image: url("rocket.pnj");
+
+DIMENSÃO E ALINHAMENTO
+width
+height
+
+Max-width
+Mx-height
+
+Margin
+Text align
+
+=====================================================================================================================================================
+
+CSS FLEXBOX - POSICIONANDO ELEMENTOS COM FLEXBOX EM CSS
+
+FLEX CONTAINER
+FLEX ITEM
+
+FOI PROJETADO COMO UM MODELO DE LAYOUT UNIDIMENSIONAL E COMO UM MÉTODO QUE PODE OFERECER DISTRIBUIÇÃO DE ESPAÇO ENTRE ITENS EM UMA INTERFACE E RECURSOS DE ALINHAMENTO.
+É A TAG QUE ENVOLVE OS ITENS, SERÁ NELA QUE IREMOS APLICAR A PROPIEDADE "DISPLAY:FLEX". TRANSFORMA TODOS OS SEUS ITENS FILHOS EM FLEX ITENS.
+
+PROPIEDADE RELACIONADAS
+DISPLAY - INICIALIZADOR DO CONTAINER
+FLEX-DIRECTION - FAZ O DIRECIONAMENTO DOS ITENS
+FLEX-WRAP - QUEBRA DE LINHAS
+FLEX-FLOW
+JUSTIFY-CONTENT - ALINHAS OS ITENS DO CONTAINER
+ALIGN-ITEMS - ALINHA OS ITEMS DE ACORDO COM O EIXO
+ALIGN CONTENT - ALINHA AS LINHAS
+
+PROPIEDADES RELACIONADAS
+FLEX-FROW
+FLEX-BASIS
+FLEX-SHRINK
+FLEX
+ORDER
+ALIGN-SELF
+
+HTML SNIPPETS
+LIVE HTML PREVIWER
+
+FLEX-WRAP - É A PROPIEDADE QUE DEFINE SE OS ITENS DEVEM OU NÃO QUABRAR A LINHA. POR PADRÃO ELES NÃO QUEBRAM LINHAS, ISSO FAZ QUE OS FLEX ITENS SEJAM
+COMPACTADOS ALÉM DO LIMITE DO CONTEÚDO.
+
+NOWRAP - É O PADRÃO, NÃO PERMITE A QUEBRA DE LINHA.
+
+WRAP-REVERSE- PERMITE A QUEBRA DE LINHA ASSIM QUE UM DOS FLEX ITENS NÃO PUDER MAIS SER COMPACTADO, PORÉM NA DIREÇÃO CONTRÁRIA DA LINHA, ACIMA.
+
+FLEX-FLOW - É UM ATLAHO PARA AS PROPIEDADES FLEX-DIRECTION E FLEX-WRAP, PORÉM SEU USO NÃO É TÃO COMUM, VISTO QUE, QUANDO MUDAMOS O FLEX-DIRECTION
+PARA COLUMN, MANTEMOS O PADRÃO DO FLEX-WRAP QUE É NOWRAP.
+
+JUSTIFY CONTENT - ESSA PROPIEDADE VAI SE ENCARREGAR DE ALINHAR OS ITENS DENTRO DO CONTAINER DE ACORDO COM A DIREÇÃO PRETENDIDA E TRATAR DA DISTRIBUIÇÃO
+DE ESPAÇAMENTO ENTRE ELES. OBS.: CASO SEUS ITENS ESTEJA OCUPANDO 100% DE TODO O CONTAINER, ELE NÃO SE APLICA.
+
+VAIRAÇÕES:
+FLEX-START: INICIO DO CONTAINER.
+FLEX-END: FINAL DO CONTAINER.
+CENTER: AO CENTRO DO CONTAINER.
+SPACE-BETWEEN: CRIAR UM ESPAÇAMENTO IGUAL ENTRE OS ELEMENTOS.
+SPACE-AROUND: OS ESPAÇAMENTOS DO MEIO SÃO DUAS VEZES MAIORES QUE O INICIAL E FINAL.
+
+ALIGN ITEMS - TRATA DO ALINHAMENTO DOS FLEX ITENS DE ACORDO COM O EIXO DO CONTAINER. O ALINHAMENTO É DIFERENTE PARA QUANDO OS ITENS ESTÃO EM COLUNAS OU LINHAS.
+PERMITE O ALINHAMENTO CENTRAL NO EIXO VERTICAL.
+
+TIPOS DE ALINHAMENTO.
+CENTER - ALINHAMENTOS DOS ITENS AO CENTRO.
+STRETCH: PADRÃO, E OS FLEX ITENS CRESÇAM IGUALMENTE.
+FLEX-START: ALINHAMENTO DOS ITENS NO INICIO.
+FLEX-END: ALINHAMENTO DOS ITENS NO FINAL.
+BASELINE: ALINHAMENTO DE ACORDO COM A LINHA BASE DA TIPOGRAFIA DOS ITENS.
+
+FLEX-GROW - DEFINE A PROPORCIONALIDADE DE CRESCIMENTOS DOS ITENS, RESPEITANDO O TAMANHO DE SEUS CONTEÚDOS INTERNOS. OBS.: NÃO IRÁ FUNCIONAR CASO TENHAMOS
+ADICIONADO JUSTIFY-CONTENT AO NOSSO FLEX CONTAINER.
+
+FLEX-BASIS - É A PROPIEDADE QUE ESTABELECE O TAMANHO INICIAL DO ITEM ANTES DA DISTRIBUIÇÃO DE ESPAÇO RESTANTE DELE, USANDO COMO BASE O CONTEÚDO DISPOSTO.
+VALORES POSSÍVEIS:
+AUTO - CASO O ITEM NÃO TENHA TAMANHO, ESTE SERÁ PROPORCIONAL AO CONTEÚDO DO ITEM.
+px, % EM, SÃO VALORES EXATOS PREVIAMENTE DEFINIDOS
+0 (ZERO): TERÁ RELAÇÃO COM A DEFINIÇÃO DO FLEX-GROW.
+
+FLEX-SHRINK - É A PROPIEDADE QUE ESTABELECE A CAPACIDADE DE REDUÇÃO OU COMPRESSÃO DO TAMANHO DE UM ITEM. 
+
+FLEX - ESTA PROPIEDADE É UM ATALHO OU ABREVIAÇÃO DE ESCRITA PARA AS PROPIEDADES: GRW, SHRINK E BASIS.
+
+ALIGN-SELF - É A PROPIEDADE QUE ESTABELECE O ALINHAMENTO DE MODO INDIVIDUAL SOBRE UM DETERMINADO ITEM.
+VALORES POSSÍVEIS
+AUTO: VALOR PADRÃO, IRÁ RESPEITAR A DEFINIÇÃO DE ALIGN-ITEMS DO CONTAINER
+FLEX-START: AO INÍCIO DO CONTAINER.
+FLEX-END: AO FINAL DO CONTAINER.
+CENTER: RELATIVO AO CENTRO DE ACORDO COM O EIXO.
+STRETCH: OCUPA TODO OS ESPAÇOS RELATIVOS
+BASELINE: UTILIZA A LINHA BASE DA TIPOGRAFIA.
+
+=====================================================================================================================================================
+
+JAVASCRIPT
+
+HISTORIA.
+*LINGUAGEM INTERPRETADA
+*BASEADA EM PROTÓTIPOS
+*MULTPARADIGMA
+*COMUMENTE UTILIZADA EM APLICACOES WEB CLIENTE-SIDE.
+*SEGUE O PADRAO ECMAscript.
+
+1997 - FIRST EDITION.
+1998 - ECMAscript 2 (Editorial changes only)
+1999 - ECMAscrpt 3 (Regular Expressions, try/catch).
+2009 - ECMAscript 5 (strict mode, JSON support, String.trim(), Array.isArray(), Array Iteration Methods.
+2015 - ECMAscript 6
+
+Aplicações
+*WEB
+*MOBILE
+*SMARTWATCHES
+*GAME
+*INTERNET OF THINGS
+*APIS
+
+NODE.JS => VERIFICAR CURSO NA DIO.
+VSCODE  => VERIFICAR CURSO NA DIO.
+
+RECURSOS BASICOS
+
+DOM - DOCUMENT OBJECT MODEL - ESTRUTURA DOS ELEMENTOS DENTRO DA JANELA
+
+FRAMEWORKS E BIBLIOTECAS SÃO FERRAMENTAS mkdirOTIMIZADOS PARA DESENVOLVIMENTO DOS PROJETOS
+*Vuejs
+*Angular
+*React
+*Jquery
+
+MOZILA
+W3C
+GITHUB
+DIO
+STACKOVERFLOW
+YOUTUBE
+LINKEDIN
+TWITER
+
+OPERADORES DE COMPARAÇÃO
+==  IGUAL A
+=== MESMO VALOR E MESMO TIPO 
+!=  DIFERENTE
+!== VALORES E TIPOS DIFERENTES
+>   MAIOR QUE
+<   MENOR QUE
+>=  MAIOR OU IGUAL
+<=  MENOR OU IGUAL
+
+LÓGICA
+&& 'e' LÓGICO
+|| 'ou' LÓGICO
+! 'não' LÓGICO - NEGAÇÃO - INVERTE O VALOR
+
+CONDICIONAL TERNÁRIO - SE TRUE EXECUTA EXPRESSION1, SE NÃO EXECUTA EXPRESSION2
+(condition) ? (expression1) : (expression2)
+	
+VARIAVEIS E TIPOS
+ATRIBUIÇÃO DE VALORES
+
+CASE TYPE                            EXAMPLE
+ORIGINAL VARIABLE AS STRING          some awesome var
+CAMEL CASE		 	     SomeAwesomeVar			
+SNAKE CASE			     some_awesome_var
+KEBAB CASE			     some-awesome-var
+PASCAL CASE			     SomeAwesomeVar
+UPPER CASE SNAKE CASE	             SOME_AWESOME_VAR
+
+PALAVRAS RESERVADAS NO JAVASCRIPT
+VAR e LET - POSSUEM ESCOPOS DIFERENTES
+*HOISTING - ATRIBUICAO DE VALORES SEM DECLARAR VARIAVEL
+*REDECLARACAO - SO ACONTECE COM O VAR, ESCREVER VAR E DECLARAR A VARIAVEL
+*REATRIBUICAO - NOME DA VARIAVEL SEM O VAR NA FRENTE
+
+var a = 1; //the scope is global
+var b = 2; // the scope is inside the if-block
+
+if (a ===1) {
+   var a = 11; redeclarando a variavel 'a'
+   let b = 22;
+	
+   console.log(a); // 11
+   console.log(b);	// 22
+}		
+
+CONSTANTES
+*DECLARADA EM SNAKE_UPPER_CASE
+
+*ESCOPO DE BLOCO.
+*NAO FAZ HOSTING.
+
+EXEMPLOS
+const DAYS_IN_A_WEEK = 7;
+const MY_NAME = "Kieran";
+
+           |      VAR        |    CONST   |  LET
+------------------------------------------------------	    	
+ESCOPO     | GLOBAL OU LOCAL | BLOCO      | BLOCO
+REDECLARAR | SIM             | NÃO        | NÃO
+REATRIBUIR | SIM 	     | NÃO        | SIM
+HOISTING   | SIM	     | NÃO        | M]AO
+
+ESTRUTURA DE DADOS
+
+*EXISTE EM TODAS AS LINGUAGENS DE PROGRAMAÇÃO.
+*JAVASCRIPT É UMA LINGUAGEM DE TIPAGEM DINÂNIMICA.
+
+Data type in JS
+Primitive types => numbers, strings, boolean, Null and undefined.
+Composite/Non-primitive types: objetcs, arrays.	 
+
+typeof retorna o tipo de um dado.
+
+ESTRUTURA DE DADOS - STRINGS
+*COMUMENTE UTILIZADA PARA TEXTOS
+VALORES DECLARADOS ENTRE ASPAS OU CRASES.
+
+CONCATENAÇÃO
+propieda length
+PROPIEDADE LENGTH
+ITERABILIDADE
+FORMATAÇÃO
+INDEX DE LETRAS
+
+
+ESTRUTURA DE DADOS - NUMBERS
+NUMEROS INTEIROS OU DECIMAIS
+
+BOLLEANS - RETORNA TRUE OR FALSE
+
+ARRAYS - LISTA ITERAVEL DE ELEMENTOS
+INDEX - INICIA EM 0
+
+.push() - ADICIONA ELEMENTO NO ARRAY
+.pop() - REMOVE O ELEMENTO FINAL DO ARRAY
+.shift() - REMOVE O ELEMENTO INICIAL DO ARRAY
+.unshift() - ADICIONA ELEMENTO NO INICIO DO ARRAY
+
+OBEJTOS - ESTRUTURA TIPO "CHAVE E VALOR"
+
+EMPTY, NULL E UNDEFINIED
+
+EMPTY - VALOR FOI DECLARADO SEM VALOR CONTINIDO NA VARIAVEL
+NULL - PROPOSITALMENTE O VALOR NÃO EXISTE.
+UNDEFINED - VAOR INDEFINIDO.
+
+=====================================================================================================================================================
+
+FUNÇÕES - DEFINICAO COMUM DE UMA FUNCAO
+* VARIAVEIS CRIADAS DENTRO DE UMA FUNCAO APENAS PODEM SER UTILIZADAS DENTRO DELA.
+
+function nome(parametros)`
+	//instrucoes
+}
+
+*QUANDO INVOCAMOS O "return", A FUNCAO PARA DE SER EXECUTADA.
+
+FUNCAO ANONIMA - FUNCOES QUE REPRESENTAM EXPRESSOES.
+UMA VARIAVEL PODE ARMAZENAR UMA FUNCAO.
+
+const soma = function (a,b) {
+	return a + b;
+}
+
+soma(1,2) //3
+soma(5,4) //9
+
+FUNCAO AUTOINVOCAVEL - IIFE (IMMEDIATELY INVOKED FUNCTION EXPRESSION)
+UMA FUNCAO ANONIMA ENTRE PARENTESES, SEGUIDA POR OUTRO PAR DE PARETENSES, QUE REPRESENTA SUA CHAMADA. 
+(
+ function() {
+	let name = "Digital Innovation One"
+	return name;
+}
+)();
+
+EXEMPLO 1
+(
+ function (a,b) {
+	return a + b;
+}
+)(1,2); // 3
+
+TAMBEM PODE SER UTILIZADA COM PARAMETROS OU ARMAZENADA EM UMA VARIAVEL.
+
+EXEMPLO 2
+const soma3 = (
+	function(){
+	return a + b;
+}
+)(1,2);
+
+console.log(soma3) //3
+
+CALLBACKS - UMA FUNCAO PASSADA COMO ARGUMENTO PARA OUTRA, UTILIZANDO CALLBACKS, VOCE TEM MAIOR COTNROLE DA ORDEM DE CHAMADAS.
+
+const calc = function(operacao, num1, num2){
+	return operacional(num1, num2);
+}
+
+const soma = function(num1, num2) {
+	return num1 + num2;
+}
+
+const sub = function(num1, num2) {
+	return num1 - num2;
+}
+
+const resultSoma = calc(soma, 1, 2);
+const resultSub = calc(sub, 1, 2);
+
+console.log(resultSub); // -1
+console.log(resultSoma); //3
+
+PARAMETROS
+
+OBJETO "ARGUMENTS" - UM ARRAY COM TODOS OS PARAMETROS PASSADOS QUANDO A FUNCAO FOI INVOCADA.
+
+
+ARRAYS - 
+SPREAD - UMA FORMA DE LIDAR SEPARADAMENTE COM ELEMENTOS, O QUE ERA PARTE DE UM ARRAY SE TORNA UM ELEMENTO INDEPENDETE [SE UTILIZA PARA ENVIAR VALORES PARA FUNCAO].
+REST - O QUE ERA UM ELEMENTO INDEPENDENTE SE TORNA PARTE DE UM ARRAY. [UTILIZA DENTRO DA FUNCAO]. 
+
+OBJETOS - OBJECT DESTRUCTURING - ENTRE CHAVES {}, PODEMOS FILTRAR APENAS OS DADOS QUE NOS INTERESSAM EM UM OBJETO.
+
+
+IF/ELSE
+
+EXEMPLO 1
+function numeroPositivo(num) {
+	let resultado;
+	
+	if(num < 0) {
+		resultado = false;
+	} else {
+		resultado = true;
+	}
+
+	return resultado;
+}
+
+EXEMPLO 2
+function numeroPositivo(num){
+	let resultado;
+
+	const ehnegativo = num < 0;
+	
+	if(ehnegativo) {
+		resultado = false;
+	} else {
+		resultado = true;
+	}
+	
+	return resultado;
+}
+
+EXEMPLO 3
+function numeroPositivo(num){
+	const ehNegativo = num < 0;
+	
+	if(ehNegativo){
+		return false;
+	}
+	
+	return true;
+}
+
+SWITCH/CASE - COMPARACAO DE TIPO E VALOR
+EQUIVALE A UMA COMPARACAO DE TIPO E VALOR (===), SEMPRE PRECISA DE UM VALOR "DEFAULT", IDEAL PARA QUANDO SE PRECISA COMPARAR MUITOS VALORES.
+
+function getAnimal(id){
+ switch(id){
+ case 1: return "cao";
+
+ case 2: return "gato";
+
+ case 3: return "passsaro";
+
+ default:
+	return "peixe";
+
+ }
+}
+
+getAnimal(1); //cao
+getAnimal(4); //peixe
+getAnimal("3"); //peixe
+
+=>> FOR - LOOP DENTRO DE ELEMENTOS ITERÁVEIS (ARRAYS, STRINGS).
+
+function multiplicaPorDois(arr) {
+	let multiplicados = [];
+	
+	for(let i = 0; i < arr.length; i++){
+		multiplicados.push(arr[i] * 2);
+	}
+	return multiplicados;
+}
+
+const meusNumeros = [2, 33, 456, 356, 40];
+
+multiplicaPorDois(meusNumeros); //[4, 66, 912, 712, 80]
+
+=>> for...in - LOOP ENTRE PROPIEDADES ENUMERAVEIS DE UM OBJETO.
+
+EXEMPLO 1
+function forInExemplo(obj){
+	for(prop in obj){
+		console.log(prop);
+	}
+}
+
+const meuObeto = {
+	nome: "joao",
+	idade: "20",
+	cidade: "Salvador"
+}
+
+forInExemplo(meuObjeto); 
+//nome
+//idade
+//cidade
+
+EXEMPLO 2
+function forInExemplo(obj){
+	for(prop in obj){
+		console.log(obj[prop]);
+	}
+
+const meuObeto = {
+	nome: "joao",
+	idade: "20",
+	cidade: "Salvador"
+}
+}
+
+forInExemplo(meuObjeto);
+//joao
+//20
+//Salvador
+
+=> for...of - LOOP ENTRE ESTRUTURAS ITERAVEIS (ARRAYS, STRINGS)
+
+EXEMPLO 1
+fuction logLetras(palavra){
+	for(letra of palavra){
+		console.log(letra);
+	}
+}
+
+const palavra = "abacaxi";
+
+logLetras(palavra); //a // b //a //c //a //x //i
+
+
+EXEMPLO 2
+fuction logNumeros(nums){
+	for(num of nums){
+		console.log(num);
+	}
+}
+
+const nums = [30, 20, 233, 2];
+
+logNumeros(nums); //30 //20 //233 //2
+
+=>> WHILE - EXECUTA INSTRUCOES ATE QUE A CONDICAO SE TORNE FALSA.
+
+function exemploWhile(){
+	let num = 0
+	
+	while(num <= 5) {
+		console.log(num);
+		num++;
+	}
+}
+
+exemploWhile()
+
+=>> DO....WHILE - EXECUTA INSTRUCOES ATE QUE A CONDICAO SE TORNE FALSA. POREM A PRIMEIRA EXECUCAO SEMPRE OCORRE.
+
+function exemploWhile(){
+	let num = 0
+	
+	do {
+		console.log(num);
+		num++;
+	} while(num <= 5);
+}
+
+exemploWhile()
+
+=>> THIS - A PALAVRA RESERVADA THIS E UMA REFERENCIA DE CONTEXTO. NO EXEMPLO, THIS REFERE-SE AO OBJETO PESSOA.
+
+const pessoa = {
+
+	firstName: "Andre",
+	lastName : "Soares",
+	id       : 1,
+	fullName : function() {
+	    return this.firstName + " " + "this.Name";
+	},
+	getId    : function() {
+	   return this.id;
+	}
+};
+
+pessoa.fullName(); // "Andre Soreares"
+pessoa.getID();    // 1
+}
+
+SEU VALOR PODE MUDAR DE ACORDO COM O LUGAR NO CODIGO ONDE FOI CHAMADA.
+
+CONTEXTO              |    REFERENCIA
+--------------------------------------------------
+EM UM OBJETO (METODO) | PROPIO OBJETO DONO DO METODO 
+SOZINHA               |	OBJETO GLOBAL (EM NAVEGADORES, WINDOW)
+FUNCAO                | OBJETO GLOBAL
+EVENTO                | ELEMENTO QUE RECEBEU O EVENTO
+
+
+CALL = E POSSIVEL PASSAR PARAMETROS PARA ESSA FUNCAO SEPARANDO-OS POR VIRGULAS.
+APPLY - E POSSIVEL PASSAR PARAMETROS PARA ESSE FUNCAO DENTRO DE UM ARRAY.
+BIND - CLONA A ESTRUTURA DA FUNCAO ONDE E CHAMADA E APLCIA O VALOR DO OBJETO PASSADO COMO PARAMETRO.
+
+ARROW FUNCTIONS - REPRESENTADA POR =>
+
+const helloWorld = function() {
+	return "Hello World";
+}
+
+const helloWorld = () => {
+	return "Hello World"
+}
+
+const helloWorld = () => "Hello World"
+
+const soma = (a, b) => a + b;
+soma(4,6); //10
+
+const soma = a => a;
+soma(4); //4
+
+RESTRIÇÕES:
+- Arrow function não faz hoisting!
+- "this" sempre será o objeto global. Métodos para modificar seu valor não irá funcionar;
+- Nao existe o objeto "arguments";
+- O cosntrutor (ex: new MeuObjeto()) tambem nao pode ser utilizado.
+
+=====================================================================================================================================================
+
+COLEÇÕES MAP - UMA COLECAO DE ARRAYS NO FORMATO [CHAVE, VALOR], PODE SER ITERADO POR UM LOOP FOR...OF
+
+
+const myMap = new Map()
+
+myMap.set('apple', 'fruit');
+
+MyMap.get('apple');
+
+myMap.delete('appl');
+
+myMap.get('apple');
+
